@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <!--Sidebar content-->
 
-</body>
-</html>
+            Search: <input ng-model="query"><br>
+            Sort by:
+            <select ng-model="orderProp">
+                <option value="ComicName">Alphabetical</option>
+                <option value="priority">Priority</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-2">
+            <!--Body content-->
+
+            <ul class="comics">
+                <li ng-repeat="comic in comics | filter:query | orderBy:orderProp" class="thumbnail">
+                    href: #/comics/{{comic.ComicCode}}
+                    <a href="#/comics/{{comic.ComicCode}}">{{comic.ComicName}}</a>
+                    ({{comic.Domain}})
+                    <a href="#/comics/{{comic.ComicCode}}" class="thumb"><img ng-src="{{comic.imgDirectoryLocation}}/{{comic.ComicName}}/{{comic.imgCode}}20151226.jpg"></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
