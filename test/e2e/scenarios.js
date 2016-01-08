@@ -4,10 +4,17 @@
 
 describe('ComicViewer App', function () {
 
+    it('should redirect index.html to index.html#/comics', function() {
+        browser.get('app/index.html');
+        browser.getLocationAbsUrl().then(function(url) {
+            expect(url).toEqual('/comics');
+        })
+    });
+
     describe('Comic List view', function () {
 
         beforeEach(function () {
-            browser.get('app/index.html');
+            browser.get('app/index.html#/comics');
         });
 
 
@@ -31,7 +38,7 @@ describe('ComicViewer App', function () {
             query.sendKeys('dilbert');
             element.all(by.css('.comics li a')).first().click();
             browser.getLocationAbsUrl().then(function(url) {
-                expect(url).toBe('/comics//dilbert');
+                expect(url).toBe('/comics/dilbert');
             });
         });
 
@@ -53,6 +60,7 @@ describe('ComicViewer App', function () {
                 "Zits"
             ]);
 
+
             element(by.model('orderProp')).element(by.css('option[value="priority"]')).click();
 
             expect(getNames()).toEqual([
@@ -61,6 +69,16 @@ describe('ComicViewer App', function () {
                 "Wizard of Id"
             ]);
 
+        });
+    });
+
+    describe('Comic detail view', function() {
+        beforeEach(function() {
+            browser.get('app/index.html#/comics/bc');
+        });
+
+        it('should display placeholder page with comicId', function() {
+           expect(element(by.binding('comicId')).getText()).toBe('bc');
         });
     });
 });
