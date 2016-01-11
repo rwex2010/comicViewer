@@ -1,10 +1,11 @@
 {
-  "id": "bc-BC",
+  "id": "bc",
   "images": [
     "img/comicStrips/BC/BC20151226.jpg",
     "img/comicStrips/BC/BC20151227.jpg",
     "img/comicStrips/BC/BC20151228.jpg",
     "img/comicStrips/BC/BC20151229.jpg"
 
-  ]
+  ],
+  "name": "BC"
 }

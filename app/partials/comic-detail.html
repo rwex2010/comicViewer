@@ -1,1 +1,18 @@
-<img  ng-src="{{comic.images[1]}}" class="comic">
+<img  ng-src="{{comic.images[0]}}" class="comic">
+
+Hi<br>
+<h1>{{comic.name}}</h1>
+
+<p>{{comic.description}}</p>
+
+<ul class="comic-thumbs">
+    <li ng-repeat="img in comic.images">
+        <img src="{{img}}">
+    </li>
+</ul>
+
+<ul class="specs">
+    <li>
+        <span>Availability and Networks</span>
+    </li>
+</ul>
