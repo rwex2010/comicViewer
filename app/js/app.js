@@ -14,6 +14,7 @@ function($routeProvider){
         templateUrl: 'partials/comic-list.html',
         controller: 'ComicListCtrl'
     }).when('/comics/:comicId', {
+        //alert("hello");
         templateUrl: 'partials/comic-detail.html',
         controller: 'ComicDetailCtrl'
     }).otherwise({

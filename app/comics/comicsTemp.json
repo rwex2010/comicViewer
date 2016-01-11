@@ -63,8 +63,10 @@
     "priority": "2"
   },
   {
-    "ComicCode": "working-daze",
+    "ComicCode": "workingdaze",
     "ComicName": "Working Daze",
+    "imgCode": "workingdaze",
+    "imgDirectoryLocation": "img/comicStrips",
     "Domain": "imgsrv.gocomics.com",
     "DateFormat": "yyyy-mm-dd",
     "SundayExt": "gif",
@@ -91,19 +93,6 @@
     "DaysAvailable": "127",
     "description": "Growing up.",
     "priority": "1"
-  },
-  {
-    "ComicCode": "moderately_confused",
-    "ComicName": "moderately_confused",
-    "Domain": "imgsrv.gocomics.com",
-    "DateFormat": "yyyy-mm-dd",
-    "SundayExt": "gif",
-    "DailyExt": "gif",
-    "UrlFormat": "http://imgsrv.gocomics.com/dim/?fh=ComicNumber&amp;w=900.0",
-    "SundayAvail": "true",
-    "OneOfMyComics": "false",
-    "description": "Always on the edge.",
-    "priority": "4"
   },
   {
     "ComicCode": "bc",

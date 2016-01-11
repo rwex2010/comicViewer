@@ -13,8 +13,12 @@ function($scope, $http) {
     $scope.orderProp = 'ComicName';
 }]);
 
-ComicViewControllers.controller('ComicDetailCtrl', ['$scope', '$routeParams',
-function($scope, $routeParams) {
-    $scope.comicId = $routeParams.comicId;
+ComicViewControllers.controller('ComicDetailCtrl', ['$scope', '$routeParams', '$http',
+function($scope, $routeParams, $http) {
+    $http.get('comics/' + $routeParams.comicId + '.json').success(function(data) {
+        //alert("paarams: " + $routeParams.comicId);
+        $scope.comic = data;
+    });
+    //$scope.comicId = $routeParams.comicId;
 }]);
 
