@@ -14,15 +14,14 @@
     </div>
     <div class="row">
 
-        <div class="col-md-2">
+        <div class="col-md-3">
             <!--Body content-->
 
             <ul class="comics">
                 <li ng-repeat="comic in comics | filter:query | orderBy:orderProp" class="thumbnail">
-                    href: #/comics/{{comic.ComicCode}}
+                    <a href="#/comics/{{comic.ComicCode}}" class="thumb"><img ng-src="{{comic.imgDirectoryLocation}}/{{comic.ComicName}}/{{comic.imgCode}}20151226.jpg"></a>
                     <a href="#/comics/{{comic.ComicCode}}">{{comic.ComicName}}</a>
                     ({{comic.Domain}})
-                    <a href="#/comics/{{comic.ComicCode}}" class="thumb"><img ng-src="{{comic.imgDirectoryLocation}}/{{comic.ComicName}}/{{comic.imgCode}}20151226.jpg"></a>
                 </li>
             </ul>
 
