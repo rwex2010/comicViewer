@@ -23,7 +23,7 @@ describe('ComicViewer App', function () {
             var comicList = element.all(by.repeater('comic in comics'));
             var query = element(by.model('query'));
 
-            expect(comicList.count()).toBe(9);
+            expect(comicList.count()).toBe(8);
 
             query.sendKeys('calvin');
             expect(comicList.count()).toBe(1);
@@ -77,8 +77,8 @@ describe('ComicViewer App', function () {
             browser.get('app/index.html#/comics/bc');
         });
 
-        it('should display placeholder page with comicId', function() {
-           expect(element(by.binding('comicId')).getText()).toBe('bc');
+        it('should display placeholder page with comic name', function() {
+           expect(element(by.binding('name')).getText()).toBe('BC');
         });
     });
 });
