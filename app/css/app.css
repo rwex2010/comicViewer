@@ -22,7 +22,7 @@ body {
   float: left;
   margin: -0.5em 1em 1.5em 0;
   padding-bottom: 1em;
-  height: 100px;
+  height: 160px;
   width: 100px;
 }
 
@@ -57,13 +57,13 @@ ul.comic-thumbs {
 ul.comic-thumbs li {
   border: 1px solid black;
   display: inline-block;
-  margin: 1em;
+  margin: 5px;
   background-color: white;
 }
 
 ul.comic-thumbs img {
   height: 100px;
-  width: 100px;
+  width: 300px;
   padding: 1em;
 }
 

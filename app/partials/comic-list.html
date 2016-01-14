@@ -1,6 +1,7 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2">
+        <!--<div class="col-md-2">-->
+        <div>
             <!--Sidebar content-->
 
             Search: <input ng-model="query"><br>
@@ -14,14 +15,18 @@
     </div>
     <div class="row">
 
-        <div class="col-md-3">
+        <div class="col-md-4">
             <!--Body content-->
 
-            <ul class="comics">
-                <li ng-repeat="comic in comics | filter:query | orderBy:orderProp" class="thumbnail">
-                    <a href="#/comics/{{comic.ComicCode}}" class="thumb"><img ng-src="{{comic.imgDirectoryLocation}}/{{comic.ComicName}}/{{comic.imgCode}}20151226.jpg"></a>
+            <!--<ul class="comics">-->
+            <ul class="comic-thumbs">
+                <!--<li ng-repeat="comic in comics | filter:query | orderBy:orderProp" class="thumbnail">-->
+                <li ng-repeat="comic in comics | filter:query | orderBy:orderProp">
+                    <!--<a href="#/comics/{{comic.ComicCode}}" class="thumb"><img class="thumb" ng-src="{{comic.imgDirectoryLocation}}/{{comic.ComicName}}/{{comic.imgCode}}20151226.jpg"></a>-->
                     <a href="#/comics/{{comic.ComicCode}}">{{comic.ComicName}}</a>
-                    ({{comic.Domain}})
+                    <a href="#/comics/{{comic.ComicCode}}" >
+                        <img  ng-src="{{comic.imgDirectoryLocation}}/{{comic.ComicName}}/{{comic.imgCode}}20151226.jpg">
+                    </a>
                 </li>
             </ul>
 

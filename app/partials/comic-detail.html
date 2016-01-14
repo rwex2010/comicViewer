@@ -1,13 +1,13 @@
-<img  ng-src="{{comic.images[0]}}" >
+<!--<img  ng-src="{{comic.images[0]}}" >-->
+<img  ng-src="{{mainImageUrl}}" >
 
-Hi<br>
 <h1>{{comic.name}}</h1>
 
 <p>{{comic.description}}</p>
 
 <ul class="comic-thumbs">
     <li ng-repeat="img in comic.images">
-        <img src="{{img}}">
+        <img ng-src="{{img}}" ng-click="setImage(img)">
     </li>
 </ul>
 
