@@ -52,7 +52,7 @@ describe('Comic controllers', function () {
             expect(scope.comic).toBeUndefined();
             $httpBackend.flush();
 
-            expect(scope.comic).toEqual({ComicName:'comic xyz'});
+            expect(scope.comic).toEqual({ComicName:'comic xyz', mydate : '01/10/2017' });
         });
     });
 });
