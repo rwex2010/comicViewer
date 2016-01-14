@@ -18,6 +18,7 @@ function($scope, $routeParams, $http) {
     $http.get('comics/' + $routeParams.comicId + '.json').success(function(data) {
         //alert("paarams: " + $routeParams.comicId);
         $scope.comic = data;
+        $scope.comic.mydate = "01/10/2017";
     });
     //$scope.comicId = $routeParams.comicId;
 }]);
