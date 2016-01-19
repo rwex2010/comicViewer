@@ -36,7 +36,7 @@ describe('ComicViewer App', function () {
         it('should render specific links', function(){
             var query = element(by.model('query'));
             query.sendKeys('dilbert');
-            element.all(by.css('.comics li a')).first().click();
+            element.all(by.css('.comic-thumbs li a')).first().click();
             browser.getLocationAbsUrl().then(function(url) {
                 expect(url).toBe('/comics/dilbert');
             });
@@ -77,8 +77,12 @@ describe('ComicViewer App', function () {
             browser.get('app/index.html#/comics/bc');
         });
 
-        it('should display placeholder page with comic name', function() {
+        xit('should display BC page', function() {
            expect(element(by.binding('name')).getText()).toBe('BC');
         });
+
+        //it('should display the first comic image as the main comic image', function() {
+        //    expect(element(by.css('img.comic')).getAttribute(('src').toMatch(/img\/comicsStrips\/BC\/BC20151226.jpg);
+        //});
     });
 });

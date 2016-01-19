@@ -37,11 +37,17 @@ describe('Comic controllers', function () {
     });
 
     describe('ComicDetailCtrl', function () {
-        var scope, ctrl, $httpBackend;
+        var scope, ctrl, $httpBackend, xyzComicData = function() {
+            return {
+                name: 'comic xyz',
+                images: ['image/url1.png', 'image/url2.png'],
+                mydate: '01/10/2017'
+            }
+        };
 
         beforeEach(inject(function (_$httpBackend_, $rootScope, $routeParams, $controller) {
             $httpBackend = _$httpBackend_;
-            $httpBackend.expectGET('comics/xyz.json').respond({ComicName:'comic xyz'});
+            $httpBackend.expectGET('comics/xyz.json').respond(xyzComicData());
 
             $routeParams.comicId='xyz';
             scope = $rootScope.$new();
@@ -52,7 +58,7 @@ describe('Comic controllers', function () {
             expect(scope.comic).toBeUndefined();
             $httpBackend.flush();
 
-            expect(scope.comic).toEqual({ComicName:'comic xyz', mydate : '01/10/2017' });
+            expect(scope.comic).toEqual(xyzComicData());
         });
     });
 });
