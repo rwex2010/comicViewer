@@ -5,7 +5,8 @@
 var comicViewer = angular.module('comicViewer', [
     'ngRoute',
     'ComicViewControllers',
-    'comicFilters'
+    'comicFilters',
+    'comicServices'
 ]);
 
 comicViewer.config(['$routeProvider',

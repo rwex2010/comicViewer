@@ -3,8 +3,17 @@
 /* jasmine specs for controllers go here */
 describe('Comic controllers', function () {
 
+    beforeEach(function(){
+        this.addMatchers({
+            toEqualData: function(expected) {
+                return angular.equals(this.actual, expected);
+            }
+        });
+    });
+
     // Load our app module definition before each test.
     beforeEach(module('comicViewer'));
+    beforeEach(module('comicServices'));
 
     describe('ComicListCtrl', function () {
         var scope, ctrl, $httpBackend;
@@ -18,10 +27,10 @@ describe('Comic controllers', function () {
         }));
 
         it('should create "comics" strips with 2 comics fetched from xhr', (function () {
-            expect(scope.comics).toBeUndefined();
+            expect(scope.comics).toEqualData([]);
             $httpBackend.flush();
 
-            expect(scope.comics).toEqual([{ComicName: 'Dilbert'}, {ComicName: 'Calvin and Hobbes'}]);
+            expect(scope.comics).toEqualData([{ComicName: 'Dilbert'}, {ComicName: 'Calvin and Hobbes'}]);
         }));
 
         it('should set the default value of ordProp model', function () {
