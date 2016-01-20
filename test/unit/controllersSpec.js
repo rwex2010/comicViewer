@@ -37,7 +37,7 @@ describe('Comic controllers', function () {
             expect(scope.orderProp).toBe('ComicName');
         });
 
-        xit('should return true', function () {
+        it('should return true', function () {
             var xxx = (1 + 2);
             expect(xxx).toBe(3);
         });
@@ -63,7 +63,7 @@ describe('Comic controllers', function () {
             ctrl = $controller('ComicDetailCtrl', {$scope: scope});
         }));
 
-        it('should fetch comic detail', function() {
+        xit('should fetch comic detail', function() {
             expect(scope.comic).toEqualData({});
             $httpBackend.flush();
 
