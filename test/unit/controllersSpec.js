@@ -37,7 +37,7 @@ describe('Comic controllers', function () {
             expect(scope.orderProp).toBe('ComicName');
         });
 
-        it('should return true', function () {
+        xit('should return true', function () {
             var xxx = (1 + 2);
             expect(xxx).toBe(3);
         });
@@ -64,10 +64,10 @@ describe('Comic controllers', function () {
         }));
 
         it('should fetch comic detail', function() {
-            expect(scope.comic).toBeUndefined();
+            expect(scope.comic).toEqualData({});
             $httpBackend.flush();
 
-            expect(scope.comic).toEqual(xyzComicData());
+            expect(scope.comic).toEqualData(xyzComicData());
         });
     });
 });
