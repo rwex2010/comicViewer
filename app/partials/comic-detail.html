@@ -8,7 +8,9 @@
 <p>{{comic.description}}</p>
 
 <ul class="comic-thumbs">
-    <li ng-repeat="img in comic.images">
+    <li ng-repeat="(key, img) in comic.images">
+
+        {{key}}
         <img ng-src="{{img}}" ng-click="setImage(img)">
     </li>
 </ul>
