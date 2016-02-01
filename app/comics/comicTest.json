@@ -1,0 +1,18 @@
+[
+  {
+    "ComicName": "Dilbert",
+    "imgCode": "dilbert",
+    "imgDirectoryLocation": "img/comicStrips",
+    "Domain": "Dilbert.com",
+    "DateFormat": "yyyy-mm-dd",
+    "SundayExt": "gif",
+    "DailyExt": "gif",
+    "UrlFormat": "http://imgsrv.gocomics.com/dim/?fh=ComicNumber&amp;w=900.0",
+    "SundayAvail": "true",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127",
+    "description": "Office practices",
+    "priority": "1"
+  }
+
+]

@@ -4,6 +4,7 @@
 
 var comicViewer = angular.module('comicViewer', [
     'ngRoute',
+    ngResource,
     'ComicViewControllers',
     'comicFilters',
     'comicServices'

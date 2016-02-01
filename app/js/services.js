@@ -8,5 +8,6 @@ comicServices.factory('Comic', ['$resource',
 function($resource){
     return $resource('comics/:comicId.json', {}, {
         query: {method:'GET', params:{comicId:'comicsTemp'}, isArray:true}
+        //query: {method:'GET', params:{comicId:'comicTest'}, isArray:true}
     });
 }]);
