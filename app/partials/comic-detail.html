@@ -21,3 +21,11 @@
         <span>{{comic.mydate}}</span>
     </li>
 </ul>
+<ul class="lists" ng-controller="SomeDetailCtrl as comList">
+    <li>
+        Where am I<br>
+    </li>
+    <li ng-repeat="nkey in comList.comicStrips">
+        <span>{{nkey}}</span>
+    </li>
+</ul>

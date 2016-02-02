@@ -22,3 +22,15 @@ ComicViewControllers.controller('ComicDetailCtrl', ['$scope', '$routeParams', 'C
         };
     }]);
 
+ComicViewControllers.controller('SomeDetailCtrl', function($scope ,ListComic){
+
+    this.comicStrips =  ListComic;
+
+    //this.ListComic = ListComic;
+});
+
+//ComicViewControllers.controller('SomeDetailCtrl', ['ListComic', function(ListComic){
+//   //var comList = ListComic;
+//   // this.comList = ListComic;
+//    this.ListComic = ListComic;
+//}]);

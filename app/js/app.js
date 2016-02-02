@@ -4,7 +4,6 @@
 
 var comicViewer = angular.module('comicViewer', [
     'ngRoute',
-    ngResource,
     'ComicViewControllers',
     'comicFilters',
     'comicServices'
@@ -24,3 +23,7 @@ function($routeProvider){
         redirectTo: '/comics'
     });
 }]);
+
+comicViewer.config(function(ListComicProvider) {
+    ListComicProvider.setComicId("dilbert");
+});
