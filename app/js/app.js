@@ -9,6 +9,8 @@ var comicViewer = angular.module('comicViewer', [
     'comicServices'
 ]);
 
+var comicServices = angular.module('comicServices', ['ngResource']);
+
 comicViewer.config(['$routeProvider',
 function($routeProvider){
     $routeProvider.
