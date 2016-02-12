@@ -16,6 +16,7 @@ ComicViewControllers.controller('ComicDetailCtrl', ['$scope', '$routeParams', 'C
     function ($scope, $routeParams, Comic) {
         console.log("in ComicDetailCtrl: ");
         console.log($scope);
+        console.log($routeParams);
         $scope.comic = Comic.get({comicId: $routeParams.comicId}, function (comic) {
             $scope.mainImageUrl = comic.images[0];
             $scope.comic.mydate = "01/10/2017";
