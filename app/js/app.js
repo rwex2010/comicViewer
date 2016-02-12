@@ -26,6 +26,10 @@ function($routeProvider){
     });
 }]);
 
-comicViewer.config(function(ListComicProvider) {
-    ListComicProvider.setComicId("dilbert");
-});
+//comicViewer.config(function(ListComicProvider) {
+//    ListComicProvider.setComicId("dilbert");
+//});
+
+//comicViewer.config(function(ComicDetailFactory) {
+//    ComicDetailFactory.setComicId("dilbert");
+//});

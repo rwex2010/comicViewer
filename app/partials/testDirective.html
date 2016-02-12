@@ -1,7 +1,10 @@
-<ul class="lists comic-thumbs" ng-controller="SomeDetailCtrl as comList">
-    <li ng-repeat="nkey in comList.comicStrips">
-        <!--<span>{{nkey}}</span>-->
-        <img ng-src="{{nkey}}" ng-click="setImage(img)">
-
-    </li>
-</ul>
+<div ng-controller="SomeDetailCtrl as comList">
+    <div>
+        <img ng-src="{{comList.mainImageUrl}}" style="max-width: 400px;max-height: 400px">
+    </div>
+    <ul class="comic-thumbs" >
+        <li ng-repeat="nkey in comList.comicStrips">
+            <img ng-src="{{nkey}}" ng-click="setMainImage('{{nkey}}')">
+        </li>
+    </ul>
+</div>

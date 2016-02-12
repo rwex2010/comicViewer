@@ -1,5 +1,6 @@
-comicServices.factory("ListComic", ListComicFactory);
-function ListComicFactory(){
+comicServices.factory("ComicDetail", ComicDetailFactory);
+function ComicDetailFactory(){
+    console.log("in the ComicDetail factory");
     var imageLocation = "img/comicStrips";
     var newComicId = "BC";
     //newComicId=myComicId;

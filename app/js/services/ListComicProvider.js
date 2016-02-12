@@ -11,7 +11,7 @@ comicViewer.provider('ListComic',
         }
 
         this.$get = function () {
-            console.log("in the get function: " + newComicId);
+            console.log("in the ListComic Provider $get function: " + newComicId);
             //return function (newComicId) {
                 console.log("in the return function: " + newComicId);
                 var returnValue = [];
