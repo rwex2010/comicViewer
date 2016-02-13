@@ -1,4 +1,4 @@
-//ComicViewControllers.controller('TryThisCtrl', ['$scope', '$routeParams', 'Comic',
+//ComicViewControllers.controller('TryThisCtrl', ['$scope', '$routeParams', 'TryIt',
 //    function ($scope, $routeParams, Comic) {
 //        console.log("in TryThisCtrl: ");
 //        console.log($scope);
@@ -14,6 +14,7 @@
 //        };
 //
 //    }]);
+
 comicViewer.controller('TryThisCtrl',['$scope', '$routeParams', function ($scope,$routeParams) {
     //$scope.images = {
     //    comicId: $routeParams.comicId,
