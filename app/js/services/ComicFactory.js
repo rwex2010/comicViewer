@@ -8,6 +8,8 @@
 comicServices.factory('Comic', ['$resource', getComics]);
 
 function getComics($resource) {
+    console.log("in Comic Factory Service")
+    //console.log("comicId: " + comidId);
     var newResource = $resource('comics/:comicId.json', {}, {
         query: {method: 'GET', params: {comicId: 'comicsTemp'}, isArray: true}
         //query: {method:'GET', params:{comicId:'comicTest'}, isArray:true}

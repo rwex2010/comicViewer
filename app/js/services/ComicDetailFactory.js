@@ -1,3 +1,5 @@
+'use strict';
+
 comicServices.factory("ComicDetail", ComicDetailFactory);
 function ComicDetailFactory(){
     console.log("in the ComicDetail factory");

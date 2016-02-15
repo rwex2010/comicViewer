@@ -1,0 +1,25 @@
+<div >
+    <img  ng-src="{{mainImageUrl}}" style="max-width: 400px;max-height: 400px">
+</div>
+
+<h1>{{comic.name}}</h1>
+
+<p>{{comic.description}}</p>
+
+<ul class="comic-thumbs">
+    <li ng-repeat="(key, img) in comic.images">
+
+        {{key}}
+        <img ng-src="{{img}}" ng-click="setImage(img)">
+    </li>
+</ul>
+
+<ul class="specs">
+    <li>
+        <span>Here is something interesting</span>
+        <span>{{comic.mydate}}</span>
+    </li>
+</ul>
+
+<!--<try-this-directive></try-this-directive>-->
+<!--<test-directive></test-directive>-->

@@ -1,3 +1,5 @@
+'use strict';
+
 //comicServices.provider('ListComic',
 comicViewer.provider('ListComic',
     function ListComicProvider() {
