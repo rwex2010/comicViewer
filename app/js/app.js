@@ -23,14 +23,14 @@ function($routeProvider){
         when('/comics', {
         templateUrl: 'partials/comic-list.html',
         controller: 'ComicListCtrl'
-    }).when('/comics/:comicId', {
-        //alert("hello");
-        templateUrl: 'partials/comic-detail.html',
-        controller: 'ComicDetailCtrl'
     }).when('/comics/expanded/:comicId', {
         //alert("hello");
         templateUrl: 'js/PageExpanded/comic-expanded.html',
         controller: 'DetailExpandedCtrl'
+    }).when('/comics/:comicName/:comicId', {
+        //alert("hello");
+        templateUrl: 'partials/comic-detail.html',
+        controller: 'ComicDetailCtrl'
     }).otherwise({
         redirectTo: '/comics'
     });

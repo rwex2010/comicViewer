@@ -3,7 +3,7 @@ comicViewer.directive('testDirective', function(){
     return {
         restrict: 'E',
         scope: {},
-        templateUrl: 'partials/testDirective.html',
+        templateUrl: 'js/TestDirective/testDirective.html',
         controller: function($scope) {
             console.log("testDirective")
             console.log($scope)
