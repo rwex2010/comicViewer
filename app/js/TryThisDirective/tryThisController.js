@@ -1,98 +1,30 @@
-ComicViewControllers.controller('TryThisCtrl', ['$scope', '$routeParams', 'TryIt',
-    function ($scope, $routeParams, TryIt) {
-        console.log("in TryThisCtrl: ");
-        console.log($scope);
-        console.log($routeParams);
-        $scope.comic = TryIt.get({comicId: $routeParams.comicId}, function (comic) {
-            $scope.mainImageUrl = comic.images[0];
-            $scope.comic.mydate = "01/10/2017";
-        });
 
-        $scope.setImage = function (imageUrl) {
-            console.log("in TryThisCtrl set.image: "+ imageUrl);
-            console.log($scope);
-            $scope.mainImageUrl = imageUrl;
-        };
+ComicViewControllers.controller('TryThisCtrl', ['$q', '$scope', '$routeParams', 'tryItService', TryThisCtrl]);
+function TryThisCtrl($q, $scope, $routeParams, tryItService) {
+    var vm = this;
+    tryItService.getAllComicStrips($routeParams.comicName)
+        .then(getComicSuccess)
+        .catch(errorCallBack);
 
-    }]);
-//ComicViewControllers.controller('TryThisCtrl', ['$scope', '$routeParams', 'TryIt',
-//    function ($scope, $routeParams, Comic) {
-//        console.log("in TryThisCtrl: ");
-//        console.log($scope);
-//        $scope.comic = Comic.get({comicId: $routeParams.comicId}, function (comic) {
-//            $scope.mainImageUrl = comic.images[0];
-//            $scope.comic.mydate = "01/10/2017";
-//        });
-//
-//        $scope.setImage = function (imageUrl) {
-//            console.log("in TryThisCtrl set.image: "+ imageUrl);
-//            console.log($scope);
-//            $scope.mainImageUrl = imageUrl;
-//        };
-//
-//    }]);
+    function getComicSuccess(comics) {
+        console.log("getComicSuccess: " + comics.ComicName);
+        //vm.comicStrips=comics;
+        //vm.mainImageUrlTryThis = comics.images[0];
+        $scope.comicStrips = comics;
+        $scope.mainImageUrlTryThis = comics.images[0];
+    }
 
-//comicViewer.controller('TryThisCtrl',['$scope', '$routeParams', function ($scope,$routeParams) {
-//    //$scope.images = {
-//    //    comicId: $routeParams.comicId,
-//    //    comicName: $routeParams.comicId,
-//    //    comicStrips: GetImages($routeParams.comicId),
-//    //    mainImageUrl: ""
-//    //};
-//    console.log("TryThisCtrl ....");
-//    console.log($scope);
-//    console.log($routeParams);
-//    var comicId = $routeParams.comicId;
-//    var comicName = $routeParams.comicId;;
-//    var mainImageUrl=""
-//    return {
-//        comicStrips: GetImages(comicId, comicName),
-//        mainImageUrl: mainImageUrl
-//    };
-//
-//    $scope.setMainImage = function(imageClicked) {
-//        console.log("TryThisCtrl setMainImage....");
-//        console.log($scope);
-//        $scope.mainImageUrl = imageClicked;
-//    }
-//
-//    function GetImages(comicId, comicName) {
-//        var imageLocation = "img/comicStrips";
-//        var newComicId = comicId;
-//        var newComicName = comicName;
-//
-//        console.log("in the controller GetImages function: " + newComicId + " Name:"+newComicName);
-//        console.log($scope);
-//        //return function (newComicId) {
-//        //console.log("in the return function: " + newComicId);
-//        var returnValue = [];
-//
-//        var strtDate = new Date();
-//        var toDay = strtDate;
-//        for (var days = 0; days < 14; days++) {
-//            var strYear = toDay.getFullYear();
-//            var strMon = ( "0" + (toDay.getMonth() + 1)).slice(-2);
-//            var strDay = ( "0" + toDay.getDate()).slice(-2);
-//            //returnValue[days] = ComicKey+strYear+strMon+strDay;
-//            var imageId = newComicId + strYear + strMon + strDay + ".jpg";
-//            //returnValue[days] = imageLocation + "/" + newComicId + "/" + imageId;
-//            returnValue[days] = imageLocation + "/" + newComicName + "/" + imageId;
-//
-//            toDay.setDate(toDay.getDate() - 1);
-//        }
-//        console.log("before the return: " + returnValue.length);
-//
-//        mainImageUrl=returnValue[2];
-//        return returnValue;
-//
-//        //}
-//    }
-//
-//    function SetMainImage(dmy) {
-//        alert("hello");
-//    }
-//    //this.comicStrips = function(comicId) {
-//    //    //return ListComic(comicId);
-//    //  return  ListComic(comicId);
-//    //}
-//}]);
+    //vm.setImageTryThis = function (imageUrl) {
+    $scope.setImageTryThis = function (imageUrl) {
+        console.log("in setImageTryThis(), img = " + imageUrl);
+        //vm.mainImageUrlTryThis = imageUrl;
+        $scope.mainImageUrlTryThis = imageUrl;
+    };
+
+    function errorCallBack(errorMsg) {
+        console.log('Error Message in TryThisCtrl: ' + errorMsg);
+    }
+
+};
+
+

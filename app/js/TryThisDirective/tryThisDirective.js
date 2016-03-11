@@ -4,12 +4,6 @@ comicViewer.directive('tryThisDirective', function(){
         restrict: 'E',
         scope: {},
         templateUrl: 'js/TryThisDirective/tryThisDirective.html',
-        controller: function($scope) {
-            console.log("tryThisDirective controller")
-            console.log($scope)
-            $scope.setMainImage = function(img) {
-                $scope.mainImageUrl = img;
-            }
-        }
+        controller: 'TryThisCtrl'
     }
 })

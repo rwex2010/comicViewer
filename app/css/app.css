@@ -4,6 +4,12 @@ body {
   padding-top: 20px;
 }
 
+legend.myLegend {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 10px;
+  color: #333;
+}
 
 .comic-images {
   background-color: white;

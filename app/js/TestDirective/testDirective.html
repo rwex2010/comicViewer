@@ -9,7 +9,7 @@
     </div>
     <ul class="comic-thumbs" >
         <li ng-repeat="nkey in comList.comicStrips">
-            <img ng-src="{{nkey}}" ng-click="setMainImage('{{nkey}}')">
+            <img ng-src="{{nkey}}" ng-click="comicStrips.setMainImage('{{nkey}}')">
         </li>
     </ul>
 </div>

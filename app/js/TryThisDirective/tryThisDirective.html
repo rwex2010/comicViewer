@@ -1,15 +1,21 @@
-<!--<ul class="specs">-->
-    <!--<li>-->
-        <!--<span>Try This Directive</span>-->
-    <!--</li>-->
-<!--</ul>-->
+<ul class="specs">
+    <li>
+        <span>Try This Directive</span>
+    </li>
+</ul>
 <div ng-controller="TryThisCtrl as comList">
     <div>
-        <img ng-src="{{comList.mainImageUrl}}" style="max-width: 400px;max-height: 400px">
+    <!--<img ng-src="{{comList.mainImageUrl}}" style="max-width: 400px;max-height: 400px">-->
+    <img ng-src="{{mainImageUrlTryThis}}" style="max-width: 400px;max-height: 400px">
     </div>
-    <ul class="comic-thumbs" >
-        <li ng-repeat="nkey in comList.comicStrips">
-            <img ng-src="{{nkey}}" ng-click="setMainImage('{{nkey}}')">
+    <ul class="comic-thumbs">
+        <!--<li ng-repeat="nkey in comList.comicStrips.images track by $index">-->
+        <!--<li ng-repeat="nkey in comList.comicStrips.images track by $index">-->
+        <li ng-repeat="nkey in comicStrips.images track by $index">
+            <fieldset>
+                <legend class="myLegend">this legend</legend>
+                <img ng-src="{{nkey}}" ng-click="setImageTryThis(nkey)">
+            </fieldset>
         </li>
     </ul>
 </div>

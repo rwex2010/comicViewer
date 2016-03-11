@@ -35,11 +35,3 @@ function($routeProvider){
         redirectTo: '/comics'
     });
 }]);
-
-//comicViewer.config(function(ListComicProvider) {
-//    ListComicProvider.setComicId("dilbert");
-//});
-
-//comicViewer.config(function(ComicDetailFactory) {
-//    ComicDetailFactory.setComicId("dilbert");
-//});

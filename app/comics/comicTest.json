@@ -1,14 +1,42 @@
 [
   {
+    "ComicCode": "calvinhobbes",
+    "ComicName": "Calvin and Hobbes",
+    "imgCode": "CalvinHobbes",
+    "imgDirectoryLocation": "img/comicStrips",
+    "Domain": "imgsrv.gocomics.com",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127",
+    "description": "Always on the edge.",
+    "priority": "2"
+  },
+  {
+    "ComicCode": "wizardofid",
+    "ComicName": "Wizard of Id",
+    "imgCode": "wizardofid",
+    "imgDirectoryLocation": "img/comicStrips",
+    "Domain": "imgsrv.gocomics.com",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127",
+    "description": "Age of kings.",
+    "priority": "3"
+  },
+  {
+    "ComicCode": "ziggy",
+    "ComicName": "Ziggy",
+    "imgCode": "ziggy",
+    "imgDirectoryLocation": "img/comicStrips",
+    "Domain": "imgsrv.gocomics.com",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127",
+    "description": "always a loser.",
+    "priority": "2"
+  },
+  {
     "ComicName": "Dilbert",
     "imgCode": "dilbert",
     "imgDirectoryLocation": "img/comicStrips",
     "Domain": "Dilbert.com",
-    "DateFormat": "yyyy-mm-dd",
-    "SundayExt": "gif",
-    "DailyExt": "gif",
-    "UrlFormat": "http://imgsrv.gocomics.com/dim/?fh=ComicNumber&amp;w=900.0",
-    "SundayAvail": "true",
     "OneOfMyComics": "true",
     "DaysAvailable": "127",
     "description": "Office practices",

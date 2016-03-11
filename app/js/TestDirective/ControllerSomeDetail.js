@@ -18,9 +18,10 @@ comicViewer.controller('SomeDetailCtrl',['$scope', '$routeParams', function ($sc
         mainImageUrl: mainImageUrl
     };
 
-    //$scope.setMainImage = function(imageClicked) {
-    //    mainImageUrl = imageClicked;
-    //}
+    $scope.setMainImage = function(imageClicked) {
+        console.log("int the setMainImage funciton")
+        mainImageUrl = imageClicked;
+    }
 
     function GetImages(comicId, comicName) {
         var imageLocation = "img/comicStrips";
@@ -54,9 +55,10 @@ comicViewer.controller('SomeDetailCtrl',['$scope', '$routeParams', function ($sc
         //}
     }
 
-    function SetMainImage(dmy) {
-        alert("hello");
-    }
+    //function setMainImage(dmy) {
+    //    console.log("in SetMainImage: " + dmy);
+    //    //alert("hello");
+    //}
     //this.comicStrips = function(comicId) {
     //    //return ListComic(comicId);
     //  return  ListComic(comicId);
