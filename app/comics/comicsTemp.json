@@ -16,6 +16,18 @@
     "priority": "1"
   },
   {
+    "ComicName": "Retail",
+    "Domain": "content.comicskingdom.net",
+    "ComicCode": "Retail",
+    "DateFormat": "YYYYMMDD",
+    "SundayExt": "gif",
+    "DailyExt": "gif",
+    "UrlFormat": "domain/code/code/date.ext",
+    "SundayAvail": "true",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127"
+  },
+  {
     "ComicCode": "calvinhobbes",
     "ComicName": "Calvin and Hobbes",
     "imgCode": "CalvinHobbes",

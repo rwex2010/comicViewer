@@ -11,9 +11,9 @@
     <ul class="comic-thumbs">
         <!--<li ng-repeat="nkey in comList.comicStrips.images track by $index">-->
         <!--<li ng-repeat="nkey in comList.comicStrips.images track by $index">-->
-        <li ng-repeat="nkey in comicStrips.images track by $index">
+        <li ng-repeat="(key, nkey) in comicStrips.images track by $index">
             <fieldset>
-                <legend class="myLegend">this legend</legend>
+                <legend class="myLegend">{{comicStrips.imageDates[key]}}</legend>
                 <img ng-src="{{nkey}}" ng-click="setImageTryThis(nkey)">
             </fieldset>
         </li>

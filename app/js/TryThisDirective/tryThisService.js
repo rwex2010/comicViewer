@@ -38,15 +38,18 @@
         function parseTheResponse(aTags, ComicName, imgCode, imgDirectoryLocation, DaysAvailable, priority) {
             var jsonToReturn = {};
             var myArray = [];
-            var jsonArrayToAdd = [];
+            var jsonImgArrayToAdd = [];
+            var jsonImgDateArrayToAdd = [];
             myArray = aTags.split(',');
 
             //for(ix=0; ix < myArray.length ; ix++) {
             for (ix = 0; ix < 10; ix++) {
                 newArray = myArray[ix].split('/');
                 if (newArray[7] != null) {
+                    imgDate = parseTheDate(newArray[7]);
                     imgPath = imgDirectoryLocation + "/" + newArray[6] + "/" + newArray[7];
-                    var xx = jsonArrayToAdd.push(imgPath);
+                    var xx = jsonImgArrayToAdd.push(imgPath);
+                    var yy = jsonImgDateArrayToAdd.push(imgDate);
                 }
             }
             jsonToReturn = {
@@ -55,10 +58,23 @@
                 "imgDirectoryLocation": imgDirectoryLocation ,
                 "DaysAvailable": DaysAvailable,
                 "priority": priority,
-                "mainImageUrlTryThis": jsonArrayToAdd[0],
-                "images": jsonArrayToAdd };
+                "mainImageUrlTryThis": jsonImgArrayToAdd[0],
+                "images": jsonImgArrayToAdd ,
+                "imageDates":jsonImgDateArrayToAdd};
             console.log("jsonToReturn: " + jsonToReturn.images);
             return jsonToReturn;
+        }
+
+        function parseTheDate(imgId) {
+            var returnValue;
+            var intLengthOfImageId = imgId.length;
+            var intYear = imgId.slice((intLengthOfImageId - 12),(intLengthOfImageId - 8));
+            var intMonth = imgId.slice((intLengthOfImageId - 8),(intLengthOfImageId - 6)) - 1;
+            var intDay = imgId.slice((intLengthOfImageId - 6),(intLengthOfImageId - 4));
+            returnValue = new Date(intYear, intMonth, intDay);
+            console.log("string passed in: " + imgId);
+            console.log("date: " + returnValue.toDateString());
+            return returnValue.toDateString();
         }
 
         function sendGetBooksError(response) {
