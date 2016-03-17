@@ -1,13 +1,13 @@
 (function () {
-    comicTryItServices.factory('tryItService', ['$q', '$timeout', '$http', tryItService]);
+    comicTryItServices.factory('tryItService', ['$q', '$timeout', '$http','$routeParams', 'Comic', tryItService]);
 
-    function tryItService($q, $timeout, $http) {
+    function tryItService($q, $timeout, $http, $routeParams, Comic) {
         return {
             getAllComicStrips: getAllComicStrips
         };
 
-        function getAllComicStrips(fileName) {
-
+        var fileName;
+        function getAllComicStrips(fileName, Comic) {
             return $http({
                 method: 'GET',
                 url: 'img/comicStrips/' + fileName + '/',
@@ -15,14 +15,28 @@
                 .then(sendResponseData)
                 .catch(sendGetBooksError);
         }
+        // $scope.comic = Comic.get({comicId: $routeParams.comicId}, function (comic) {
+        //     $scope.mainImageUrl = comic.images[0];
+        //     $scope.comic.mydate = "01/10/2017";
+        // });
 
         function sendResponseData(response) {
             //console.log("sendResponseDataOne: " + response.data);
             var aTags;
             var returnValue;
+            var ComicName;
+            var comic;
             aTags = angular.element(response.data).find('a');
             aTags = aTags.toString();
-            ComicName = "Calvin and Hobbes";
+            comic = Comic.get({comicId: $routeParams.comicId}, function (comic) {
+                ComicName = comic.name;
+                // angular.forEach(comic,function(value, key){
+                //     console.log("in ForEach: key: "+ key + "  value: " + value);
+                // })
+                console.log("Comic in get: "+comic.name);
+            });
+            console.log("Comic: "+ComicName);
+            //ComicName = "Calvin and Hobbes";
             imgCode = "CalvinHobbes";
             imgDirectoryLocation = "img/comicStrips";
             DaysAvailable = 127;
@@ -61,7 +75,7 @@
                 "mainImageUrlTryThis": jsonImgArrayToAdd[0],
                 "images": jsonImgArrayToAdd ,
                 "imageDates":jsonImgDateArrayToAdd};
-            console.log("jsonToReturn: " + jsonToReturn.images);
+            console.log("jsonToReturn: " + jsonToReturn.ComicName);
             return jsonToReturn;
         }
 

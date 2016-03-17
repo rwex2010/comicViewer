@@ -1,15 +1,10 @@
 [
   {
-    "ComicCode": "dilbert",
+    "ComicCode": "Dilbert",
     "ComicName": "Dilbert",
     "imgCode": "dilbert",
     "imgDirectoryLocation": "img/comicStrips",
     "Domain": "Dilbert.com",
-    "DateFormat": "yyyy-mm-dd",
-    "SundayExt": "gif",
-    "DailyExt": "gif",
-    "UrlFormat": "http://imgsrv.gocomics.com/dim/?fh=ComicNumber&amp;w=900.0",
-    "SundayAvail": "true",
     "OneOfMyComics": "true",
     "DaysAvailable": "127",
     "description": "Office practices",
@@ -19,6 +14,8 @@
     "ComicName": "Retail",
     "Domain": "content.comicskingdom.net",
     "ComicCode": "Retail",
+    "imgCode": "Retail",
+    "imgDirectoryLocation": "img/comicStrips",
     "DateFormat": "YYYYMMDD",
     "SundayExt": "gif",
     "DailyExt": "gif",
@@ -26,6 +23,7 @@
     "SundayAvail": "true",
     "OneOfMyComics": "true",
     "DaysAvailable": "127"
+    "priority": "2"
   },
   {
     "ComicCode": "calvinhobbes",
