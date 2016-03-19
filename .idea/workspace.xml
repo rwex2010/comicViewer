@@ -1,177 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="987edea4-5925-4de0-b005-48482e690148" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/partials/comic-detail-original.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160223.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160224.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160225.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160226.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160227.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160228.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160229.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160301.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160302.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160303.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160304.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160305.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160307.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160308.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160309.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160310.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/BC/BC20160311.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160223.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160224.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160225.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160226.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160227.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160228.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160229.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160301.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160302.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160303.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160304.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160305.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160307.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160308.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160309.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160310.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Calvin and Hobbes/CalvinHobbes20160311.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160223.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160224.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160225.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160226.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160227.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160228.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160229.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160301.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160302.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160303.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160304.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160305.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160307.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160308.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160309.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160310.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Dilbert/dilbert20160311.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160223.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160224.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160225.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160226.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160227.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160228.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160229.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160301.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160302.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160303.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160304.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160305.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160307.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160308.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160309.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160310.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Luann/luann20160311.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160223.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160224.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160225.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160226.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160227.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160228.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160229.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160301.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160302.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160303.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160304.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160305.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160307.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160308.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160309.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160310.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Wizard of Id/wizardofid20160311.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160223.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160224.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160225.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160226.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160227.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160229.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160301.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160302.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160303.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160304.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160305.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160307.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160308.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160309.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160310.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working Daze/workingdaze20160311.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160223.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160224.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160225.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160226.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160227.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160228.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160229.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160301.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160302.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160303.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160304.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160305.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160307.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160308.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160309.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160310.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Working it out/workingitout20160311.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160223.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160224.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160225.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160226.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160227.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160228.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160229.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160301.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160302.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160303.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160304.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160305.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160307.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160308.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160309.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160310.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Ziggy/ziggy20160311.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160223.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160224.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160225.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160226.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160227.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160228.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160229.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160301.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160302.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160303.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160304.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160305.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160306.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160307.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160308.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160309.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160310.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/img/ComicsToAdd/Zits/Zits20160311.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/comics/comicTest.json" afterPath="$PROJECT_DIR$/app/comics/comicTest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/comics/comicsTemp.json" afterPath="$PROJECT_DIR$/app/comics/comicsTemp.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/TryThisDirective/tryThisController.js" afterPath="$PROJECT_DIR$/app/js/TryThisDirective/tryThisController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/TryThisDirective/tryThisService.js" afterPath="$PROJECT_DIR$/app/js/TryThisDirective/tryThisService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/services/ComicFactory.js" afterPath="$PROJECT_DIR$/app/js/services/ComicFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/comic-detail.html" afterPath="$PROJECT_DIR$/app/partials/comic-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-    </list>
+    <list default="true" id="987edea4-5925-4de0-b005-48482e690148" name="Default" comment="" />
     <ignored path="ComicViewer.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -679,7 +509,7 @@
       <option name="presentableId" value="Default" />
       <updated>1451343352273</updated>
       <workItem from="1458241177615" duration="4633000" />
-      <workItem from="1458253649642" duration="419000" />
+      <workItem from="1458253649642" duration="697000" />
     </task>
     <task id="LOCAL-00001" summary="updated e2e testing">
       <created>1452284677584</created>
@@ -692,7 +522,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5052000" />
+    <option name="totallyTimeSpent" value="5330000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,7 +542,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28716528" sideWeight="0.50416666" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924527" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12806027" sideWeight="0.49583334" order="11" side_tool="false" content_ui="tabs" x="-1" y="659" width="1846" height="259" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12806027" sideWeight="0.49583334" order="11" side_tool="false" content_ui="tabs" x="-1" y="659" width="1846" height="259" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
