@@ -1,13 +1,16 @@
 (function () {
-    comicTryItServices.factory('tryItService', ['$q', '$timeout', '$http','$routeParams', 'Comic', tryItService]);
+    comicTryItServices.factory('tryItService', ['$q', '$timeout', '$http','$routeParams', 'readMyJasonService', 'filterFilter', tryItService]);
+    // comicTryItServices.factory('tryItService', ['$q', '$timeout', '$http','$routeParams', tryItService]);
 
-    function tryItService($q, $timeout, $http, $routeParams, Comic) {
+    function tryItService($q, $timeout, $http, $routeParams, readMyJasonService, filterFilter) {
+    // function tryItService($q, $timeout, $http, $routeParams) {
         return {
             getAllComicStrips: getAllComicStrips
         };
 
         var fileName;
-        function getAllComicStrips(fileName, Comic) {
+        function getAllComicStrips(fileName, readMyJasonService) {
+        // function getAllComicStrips(fileName) {
             return $http({
                 method: 'GET',
                 url: 'img/comicStrips/' + fileName + '/',
@@ -28,14 +31,32 @@
             var comic;
             aTags = angular.element(response.data).find('a');
             aTags = aTags.toString();
-            comic = Comic.get({comicId: $routeParams.comicId}, function (comic) {
-                ComicName = comic.name;
-                // angular.forEach(comic,function(value, key){
-                //     console.log("in ForEach: key: "+ key + "  value: " + value);
-                // })
-                console.log("Comic in get: "+comic.name);
-            });
-            console.log("Comic: "+ComicName);
+            comic = readMyJasonService.getMyJason()
+                // .then(readSuccess(comic))
+                // .catch(showFailure);
+                .then(function (data) {
+                    if (!data) {
+                        console.log("Data is empty");
+                        return;
+                    }
+                    var comicToUse = filterFilter(data,{ComicCode:'Retail'});
+                   var comicToUseObj =  comicToUse[0];
+            
+                    ComicName = comicToUseObj.ComicName;
+                    // ComicName = comicToUse.ComicName;
+                }, function() {
+                    console.log("Failed to load comic variable");
+                });
+            console.log("here");
+            // comic = Comic.get({comicId: $routeParams.comicId}, function (comic) {
+            //    ComicName = comic.name;
+            //     // angular.forEach(comic,function(value, key){
+            //     //     console.log("in ForEach: key: "+ key + "  value: " + value);
+            //     // })
+            //     console.log("Comic in get: "+comic.name);
+            // });
+            // console.log("Comic: "+ComicName);
+            // console.log("$q xx: "+$q.comic);
             //ComicName = "Calvin and Hobbes";
             imgCode = "CalvinHobbes";
             imgDirectoryLocation = "img/comicStrips";
@@ -43,10 +64,20 @@
             priority = 1;
             returnValue = parseTheResponse(aTags, ComicName, imgCode, imgDirectoryLocation, DaysAvailable, priority);
             console.log("Transformed: " + returnValue);
+            console.log("Comid Name: " + returnValue.ComicName);
             for (ix = 0; ix <= 4; ix++) {
                 console.log("ix: " + ix + ") " + returnValue.images[ix]);
             }
             return (returnValue);
+        }
+
+        function readSuccess(comic) {
+            var thisData = comic;
+            return thisData;
+        }
+
+        function showFailure() {
+            console.log("Failed to load comic variable");
         }
 
         function parseTheResponse(aTags, ComicName, imgCode, imgDirectoryLocation, DaysAvailable, priority) {
