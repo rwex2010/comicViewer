@@ -9,16 +9,17 @@ comicTryItServices.factory('readMyJasonService', ['$q', '$http','$routeParams', 
 // function readMyJasonService($q, $http, $routeParams, $filter) {
 function readMyJasonService($q, $http, $routeParams, filterFilter) {
     var deferred = $q.defer();
-    var comicCode;
+    var jsonUrl =  'comics/comicTest.json';
+    // var jsonUrl;
 
     return {
         getMyJason: getMyJason
     };
 
-    function getMyJason(comicCode) {
+    function getMyJason(jasonUrl) {
         return $http({
             method: 'GET',
-            url: 'comics/comicTest.json',
+            url: jsonUrl
         })
             .then(sendResponseData)
             .catch(sendErrorResponse);

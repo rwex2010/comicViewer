@@ -30,3 +30,4 @@ ComicViewControllers.controller('ComicDetailCtrl', ['$scope', '$routeParams', 'C
         };
 
     }]);
+ComicViewControllers.controller('ComicSetupCtrl', []);

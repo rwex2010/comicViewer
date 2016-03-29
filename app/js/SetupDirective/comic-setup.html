@@ -1,0 +1,43 @@
+<div class="container-fluid col-md-8" >
+    <form name="form" class="form-horizontal" ng-controller="comicSetupCtrl" >
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="inputComicCode">Comic Name: </label>
+            <!--<label class="control-label col-sm-2" for="inputComicCode">{{ComicCode}}</label>-->
+            <!--<input type="text" id="inputComicCode" value="{{ComicCode}}">-->
+            <select id="ComicName" name="ComicName" ng-model="selectedComic" ng-options="comic.ComicName for comic in theseComics">
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="inputOneOfMine">One of Mine: </label>
+            <input type="text" id="inputOneOfMine" value="{{selectedComic.OneOfMyComics}}">
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="inputPriority">Priority: </label>
+            <input type="text" id="inputPriority" value="{{selectedComic.priority}}">
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="inputDaysAvailable">DaysAvailable: </label>
+            <input type="text" id="inputDaysAvailable" value="{{selectedComic.DaysAvailable}}">
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="inputDescription">Description: </label>
+            <input type="text" id="inputDescription" value="{{selectedComic.description}}">
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="inputComicName">Comic Code: </label>
+            <input type="text" id="inputComicCode"  value="{{selectedComic.ComicCode}}">
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="inputImageCode">Image Code: </label>
+            <input type="text" id="inputImageCode" value="{{selectedComic.imgCode}}">
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="inputDomain">Domain: </label>
+            <input type="text" id="inputDomain" value="{{selectedComic.Domain}}">
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="inputImageDirectory">Image Directory: </label>
+            <input type="text" id="inputImageDirectory" value="{{selectedComic.imgDirectoryLocation}}">
+        </div>
+    </form>
+</div>

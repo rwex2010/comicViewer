@@ -31,6 +31,10 @@ function($routeProvider){
         //alert("hello");
         templateUrl: 'partials/comic-detail.html',
         controller: 'ComicDetailCtrl'
+    }).when('/setup', {
+        //alert("hello");
+        templateUrl: 'js/SetupDirective/comic-setup.html',
+        controller: 'comicSetupCtrl'
     }).otherwise({
         redirectTo: '/comics'
     });
