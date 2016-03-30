@@ -6,7 +6,8 @@ ComicViewControllers.controller('comicSetupCtrl', ['$q', '$scope', 'readMyJasonS
         var vm = this;
         var deferred = $q.defer();
         var comicToUseObj;
-        var jsonUrl =  'comics/comicTest.json';
+        // var jsonUrl =  'comics/comicTest.json';
+        var jsonUrl =  'comics/comicsNew.json';
 
         // readMyJasonService.getMyJason($routeParams.comicName)
         readMyJasonService.getMyJason(jsonUrl)
