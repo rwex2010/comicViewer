@@ -1,8 +1,8 @@
 
-ComicViewControllers.controller('TryThisCtrl', ['$q', '$scope', '$routeParams', 'tryItService', TryThisCtrl]);
-function TryThisCtrl($q, $scope, $routeParams, tryItService) {
+ComicViewControllers.controller('TryThisCtrl', ['$q', '$scope', '$routeParams', 'tryItService', 'Comic', TryThisCtrl]);
+function TryThisCtrl($q, $scope, $routeParams, tryItService, Comic) {
     var vm = this;
-    tryItService.getAllComicStrips($routeParams.comicName)
+    tryItService.getAllComicStrips($routeParams.comicName, Comic)
         .then(getComicSuccess)
         .catch(errorCallBack);
 
@@ -12,6 +12,7 @@ function TryThisCtrl($q, $scope, $routeParams, tryItService) {
         //vm.mainImageUrlTryThis = comics.images[0];
         $scope.comicStrips = comics;
         $scope.mainImageUrlTryThis = comics.images[0];
+        $scope.ComicName = comics.ComicName;
     }
 
     //vm.setImageTryThis = function (imageUrl) {

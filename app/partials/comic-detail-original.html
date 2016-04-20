@@ -1,0 +1,36 @@
+<div >
+    <img  ng-src="{{mainImageUrl}}" style="max-width: 400px;max-height: 400px">
+</div>
+
+<h1>{{comic.name}}</h1>
+
+<p>{{comic.description}}</p>
+
+<ul class="comic-thumbs">
+    <li ng-repeat="(key, img) in comic.images">
+
+        {{key}}
+        <img ng-src="{{img}}" ng-click="setImage(img)">
+    </li>
+</ul>
+
+<!--<ul class="specs">-->
+    <!--<li>-->
+        <!--<span>Availability and Networks</span>-->
+        <!--<span>{{comic.mydate}}</span>-->
+    <!--</li>-->
+<!--</ul>-->
+
+<try-this-directive></try-this-directive>
+<!--<test-directive></test-directive>-->
+<!--<div ng-controller="SomeDetailCtrl as comList">-->
+    <!--<div>-->
+        <!--<img ng-src="{{comList.mainImageUrl}}" style="max-width: 400px;max-height: 400px">-->
+    <!--</div>-->
+    <!--<ul class="comic-thumbs" >-->
+        <!--<li ng-repeat="nkey in comList.comicStrips" class="ng-binding ng-scope">-->
+            <!--&lt;!&ndash;<span>{{nkey}}</span>&ndash;&gt;-->
+            <!--<img ng-src="{{nkey}}" ng-click="setMainImage('{{nkey}}')">-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</div>-->

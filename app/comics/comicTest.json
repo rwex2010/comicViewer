@@ -33,6 +33,16 @@
     "priority": "2"
   },
   {
+    "ComicName": "Retail",
+    "Domain": "content.comicskingdom.net",
+    "ComicCode": "Retail",
+    "imgCode": "Retail",
+    "imgDirectoryLocation": "img/comicStrips",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127"
+  },
+  {
+    "ComicCode": "Dilbert",
     "ComicName": "Dilbert",
     "imgCode": "dilbert",
     "imgDirectoryLocation": "img/comicStrips",
