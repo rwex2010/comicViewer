@@ -1,5 +1,16 @@
 [
   {
+    "ComicCode": "calvinhobbes",
+    "ComicName": "Calvin and Hobbes",
+    "imgCode": "CalvinHobbes",
+    "imgDirectoryLocation": "img/comicStrips",
+    "Domain": "imgsrv.gocomics.com",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127",
+    "description": "Always on the edge.",
+    "priority": "2"
+  },
+  {
     "ComicName": "Dilbert",
     "imgCode": "dilbert",
     "Domain": "Dilbert.com",

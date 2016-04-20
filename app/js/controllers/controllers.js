@@ -20,6 +20,7 @@ ComicViewControllers.controller('ComicDetailCtrl', ['$scope', '$routeParams', 'C
         $scope.comic = Comic.get({comicId: $routeParams.comicId}, function (comic) {
             $scope.mainImageUrl = comic.images[0];
             $scope.comic.mydate = "01/10/2017";
+            console.log("ComicDetailCtrl - comic: " + comic);
         });
 
         $scope.setImage = function (imageUrl) {
@@ -29,3 +30,4 @@ ComicViewControllers.controller('ComicDetailCtrl', ['$scope', '$routeParams', 'C
         };
 
     }]);
+ComicViewControllers.controller('ComicSetupCtrl', []);
