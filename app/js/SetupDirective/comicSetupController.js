@@ -1,5 +1,9 @@
 'use strict';
 
+// TODO Add Cancel button - which cancels any changes made and moves to the next comic
+// TODO Add Save button - which saves any changes made to the the json file being used (comicsNew.json).
+// TODO Add second column with data from the json file being used (comicsNew.json)
+
 ComicViewControllers.controller('comicSetupCtrl', ['$q', '$scope', 'readMyJasonService','filterFilter', comicSetup]);
 
     function comicSetup($q, $scope, readMyJasonService, filterFilter) {

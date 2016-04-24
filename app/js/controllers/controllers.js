@@ -4,6 +4,7 @@
 
 var ComicViewControllers = angular.module('ComicViewControllers', []);
 
+// TODO display the most current comic strip for all comics in the json file being used (comicsNew.json).
 ComicViewControllers.controller('ComicListCtrl', ['$scope', 'Comic',
     function ($scope, Comic) {
         console.log("ComicListCtrl");

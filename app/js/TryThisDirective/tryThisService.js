@@ -104,7 +104,7 @@
             var jsonImgDateArrayToAdd = [];
             myArray = aTags.split(',');
 
-            for (ix = 0; ix < 10; ix++) {
+            for (ix = 0; ix < 20; ix++) {
                 newArray = myArray[ix].split('/');
                 if (newArray[7] != null) {
                    var imgDate = parseTheDate(newArray[7]);

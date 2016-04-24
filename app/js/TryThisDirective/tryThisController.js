@@ -1,3 +1,9 @@
+'use strict';
+
+// TODO Add Date Range selection
+// TODO Add number of comic strips to display
+// TODO Add Date sort order selection
+
 // ComicViewControllers.controller('TryThisCtrl', ['$q', '$scope', '$routeParams', 'tryItService', 'Comic', TryThisCtrl]);
 ComicViewControllers.controller('TryThisCtrl', ['$q', '$scope', '$routeParams', 'tryItService', 'readMyJasonService','filterFilter', TryThisCtrl]);
 // function TryThisCtrl($q, $scope, $routeParams, tryItService, Comic) {
@@ -32,7 +38,9 @@ function TryThisCtrl($q, $scope, $routeParams, tryItService, readMyJasonService,
             return;
         }
         var comicToUse = filterFilter(data, {ComicCode: $routeParams.comicId});
+        // comicToUseObj = comicToUse[0];
         comicToUseObj = comicToUse[0];
+        
         $scope.ComicName = comicToUseObj.ComicName;
         //       dataJason ["ComicName"] = comicToUseObj.ComicName ;
         //       dataJason["imgCode"] = comicToUseObj.imgCode;
