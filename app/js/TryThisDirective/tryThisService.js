@@ -106,7 +106,7 @@
 
             for (ix = 0; ix < 20; ix++) {
                 newArray = myArray[ix].split('/');
-                if (newArray[7] != null) {
+                if ((newArray[7] != null)&& (newArray[7] != "Thumbs.db")) {
                    var imgDate = parseTheDate(newArray[7]);
                     var imgPath = imgDirectoryLocation + "/" + newArray[6] + "/" + newArray[7];
                     var xx = jsonImgArrayToAdd.push(imgPath);
@@ -129,7 +129,7 @@
             //for(ix=0; ix < myArray.length ; ix++) {
             for (ix = 0; ix < 10; ix++) {
                 newArray = myArray[ix].split('/');
-                if (newArray[7] != null) {
+                if ((newArray[7] != null) && (newArray[7] != "thumbs.db")) {
                     imgDate = parseTheDate(newArray[7]);
                     imgPath = imgDirectoryLocation + "/" + newArray[6] + "/" + newArray[7];
                     var xx = jsonImgArrayToAdd.push(imgPath);

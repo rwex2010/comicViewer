@@ -11,6 +11,8 @@ ComicViewControllers.controller('ComicListCtrl', ['$scope', 'Comic',
         console.log($scope);
         $scope.comics = Comic.query();
         $scope.orderProp = 'ComicName';
+        console.log($scope.comics);
+
     }]);
 
 ComicViewControllers.controller('ComicDetailCtrl', ['$scope', '$routeParams', 'Comic',

@@ -11,6 +11,61 @@
     "priority": "2"
   },
   {
+    "ComicCode": "zits",
+    "ComicName": "Zits",
+    "imgCode": "zits",
+    "imgDirectoryLocation": "img/comicStrips",
+    "Domain": "content.comicskingdom.net",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127",
+    "description": "Teenager and parents.",
+    "priority": "2"
+  },
+  {
+    "ComicCode": "BrewsterRocket",
+    "ComicName": "Brewster Rocket",
+    "imgCode": "BrewsterRocket",
+    "imgDirectoryLocation": "img/comicStrips",
+    "Domain": "content.comicskingdom.net",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127",
+    "description": "Space idiot",
+    "priority": "2"
+  },
+  {
+    "ComicCode": "workingdaze",
+    "ComicName": "Working Daze",
+    "imgCode": "workingdaze",
+    "imgDirectoryLocation": "img/comicStrips",
+    "Domain": "imgsrv.gocomics.com",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "63",
+    "description": "Office politics.",
+    "priority": "3"
+  },
+  {
+    "ComicCode": "bc",
+    "ComicName": "BC",
+    "imgCode": "bc",
+    "imgDirectoryLocation": "img/comicStrips",
+    "Domain": "imgsrv.gocomics.com",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127",
+    "description": "Stoneage humor.",
+    "priority": "2"
+  },
+  {
+    "ComicCode": "luann",
+    "ComicName": "Luann",
+    "imgCode": "luann",
+    "imgDirectoryLocation": "img/comicStrips",
+    "Domain": "imgsrv.gocomics.com",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127",
+    "description": "Growing up.",
+    "priority": "1"
+  },
+  {
     "ComicCode": "wizardofid",
     "ComicName": "Wizard of Id",
     "imgCode": "wizardofid",
