@@ -22,8 +22,9 @@ function comicSetup($q, $scope, readMyJasonService, filterFilter) {
     // var jsonUrl =  'comics/comics.json';
     // var jsonUrl =  'comics/allComics.json';
     // for (var ix = 0; ix < 1; ix++) {
-        activeUrl = aryWhichOne[0];
-        jsonUrl = aryJsonUrl[0];
+    var ix = 1;
+        activeUrl = aryWhichOne[ix];
+        jsonUrl = aryJsonUrl[ix];
 
         // while (!blnCapturedRaw) {
 
@@ -66,13 +67,13 @@ function comicSetup($q, $scope, readMyJasonService, filterFilter) {
             $scope.OneOfMine = "FALSE";
         }
         $scope.Priority = $scope.selectedComic.priority;
-        blnCapturedRaw = true;
+        // blnCapturedRaw = true;
     }
 
     function getJsonFormatted(data) {
         $scope.formattedUrl = jsonUrl;
         $scope.formattedComics = data;
-        $scope.selectedFormattedComics = $scope.formattedComics[0];
+        $scope.selectedFormattedComics = $scope.formattedComics[2];
         $scope.FormattedComicImgCode = $scope.selectedFormattedComics.ComicCode;
         $scope.FormattedDaysAvailable = $scope.selectedFormattedComics.DaysAvailable;
         $scope.FormattedDescription = $scope.selectedFormattedComics.description;
