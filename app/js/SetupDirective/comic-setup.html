@@ -4,9 +4,9 @@
         <div class="form-group">
             <span class="label label-default col-sm-3"> </span>
             <!--<span class="label label-default col-sm-3"><h3>Original</h3> </span>-->
-            <span class="label label-default col-sm-3">{{jsonUrl}}</span>
+            <span class="label label-default col-sm-3">{{jsonUrl1}}</span>
             <span class="label label-default col-sm-1"> </span>
-            <span class="label label-default col-sm-3">Template</span>
+            <span class="label label-default col-sm-3">{{formattedUrl}}</span>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-3" for="inputComicCode">Comic Name: </label>
@@ -14,59 +14,60 @@
             <select class="col-sm-3" id="ComicName" name="ComicName" ng-model="selectedComic"
                     ng-options="comic.ComicName for comic in theseComics">
             </select>
-            <label class="control-label col-sm-1" for="inputComicCode"> </label>
-            <!--<input class="col-sm-3" type="text" id="inputComicCode" value="{{selectedFormattedComics.ComicName}}">-->
-            <select class="col-sm-3" id="FormattedComicName" name="FormattedComicName" ng-model="selectedFormattedComics"
-                    ng-options="comic2.ComicName for comic2 in formattedComics">
+            <label class="control-label col-sm-1" for="inputComicCode2"> </label>
+            <!--<input class="col-sm-3" type="text" id="inputComicCode" value="{{selectedComic2.ComicName}}">-->
+            <select class="col-sm-3" id="FormattedComicName" name="FormattedComicName" ng-model="selectedComic2"
+                    ng-options="comic2.ComicName for comic2 in theseComics2">
             </select>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-3" for="inputOneOfMine">One of Mine: </label>
             <input class="col-sm-3" type="text" id="inputOneOfMine" value="{{selectedComic.OneOfMyComics}}">
             <label class="control-label col-sm-1" for="inputOneOfMine2"> </label>
-            <input class="col-sm-3" type="text" id="inputOneOfMine2" value="{{FormattedOneOfMine}}">
+            <input class="col-sm-3" type="text" id="inputOneOfMine2" value="{{selectedComic2.OneOfMyComics}}">
         </div>
         <div class="form-group">
             <label class="control-label col-sm-3" for="inputPriority">Priority: </label>
             <input class="col-sm-3" type="text" id="inputPriority" value="{{selectedComic.priority}}">
             <label class="control-label col-sm-1" for="inputPriority2"> </label>
-            <input class="col-sm-3" type="text" id="inputPriority2" value="{{FormattedPriority}}">
+            <input class="col-sm-3" type="text" id="inputPriority2" value="{{selectedComic2.priority}}">
         </div>
         <div class="form-group">
             <label class="control-label col-sm-3" for="inputDaysAvailable">DaysAvailable: </label>
             <input class="col-sm-3" type="text" id="inputDaysAvailable" value="{{selectedComic.DaysAvailable}}">
             <label class="control-label col-sm-1" for="inputDaysAvailable2"> </label>
-            <input class="col-sm-3" type="text" id="inputDaysAvailable2" value="{{FormattedDaysAvailable}}">
+            <input class="col-sm-3" type="text" id="inputDaysAvailable2" value="{{selectedComic2.DaysAvailable}}">
         </div>
         <div class="form-group">
             <label class="control-label col-sm-3" for="inputDescription">Description: </label>
             <input class="col-sm-3" type="text" id="inputDescription" value="{{selectedComic.description}}">
             <label class="control-label col-sm-1" for="inputDescription2"> </label>
-            <input class="col-sm-3" type="text" id="inputDescription2" value="{{FormattedDescription}}">
+            <!--<input class="col-sm-3" type="text" id="inputDescription2" value="{{Description2}}">-->
+            <input class="col-sm-3" type="text" id="inputDescription2" value="{{selectedComic2.description}}">
         </div>
         <div class="form-group">
             <label class="control-label col-sm-3" for="inputComicName">Comic Code: </label>
-            <input class="col-sm-3" type="text" id="inputComicCode" value="{{selectedComic.ComicCode}}">
+            <input class="col-sm-3" type="text" id="inputComicName" value="{{selectedComic.ComicCode}}">
             <label class="control-label col-sm-1" for="inputComicName2"> </label>
-            <input class="col-sm-3" type="text" id="inputComicName2" value="{{FormattedComicImgCode}}">
+            <input class="col-sm-3" type="text" id="inputComicName2" value="{{selectedComic2.ComicCode}}">
         </div>
         <div class="form-group">
             <label class="control-label col-sm-3" for="inputImageCode">Image Code: </label>
             <input class="col-sm-3" type="text" id="inputImageCode" value="{{selectedComic.imgCode}}">
             <label class="control-label col-sm-1" for="inputImageCode2"> </label>
-            <input class="col-sm-3" type="text" id="inputImageCode2" value="{{FormattedImageCode}}">
+            <input class="col-sm-3" type="text" id="inputImageCode2" value="{{selectedComic2.imgCode}}">
         </div>
         <div class="form-group">
             <label class="control-label col-sm-3" for="inputDomain">Domain: </label>
             <input class="col-sm-3" type="text" id="inputDomain" value="{{selectedComic.Domain}}">
             <label class="control-label col-sm-1" for="inputDomain2"> </label>
-            <input class="col-sm-3" type="text" id="inputDomain2" value="{{FormattedDomain}}">
+            <input class="col-sm-3" type="text" id="inputDomain2" value="{{selectedComic2.Domain}}">
         </div>
         <div class="form-group">
             <label class="control-label col-sm-3" for="inputImageDirectory">Image Directory: </label>
             <input class="col-sm-3" type="text" id="inputImageDirectory" value="{{selectedComic.imgDirectoryLocation}}">
             <label class="control-label col-sm-1" for="inputImageDirectory2"> </label>
-            <input class="col-sm-3" type="text" id="inputImageDirectory2" value="{{FormattedImageDirectory}}">
+            <input class="col-sm-3" type="text" id="inputImageDirectory2" value="{{selectedComic2.imgDirectoryLocation}}">
         </div>
         <div class="form-group">
             <span class="col-sm-3"> </span>
