@@ -28,11 +28,13 @@ function readMyJasonService($q, $http, $routeParams, filterFilter) {
     
     function sendResponseData(response) {
         deferred.resolve(response.data);
+        // deferred.resolve(response);
 
         // var ReturnValue = $filter('filter')(deferred.promise,{ComicCode:'Retail'});
         // tryArray = deferred.promise
         // var ReturnValue = filterFilter(tryArray,{ComicCode:'Retail'});
         // return response.data;
+        // deferred.promise.$$state.value = response;
         return deferred.promise;
         // return ReturnValue;
     }

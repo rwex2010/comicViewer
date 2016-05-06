@@ -46,13 +46,13 @@ function comicSetup($q, $scope, readMyJasonService, filterFilter) {
             console.log("Data is empty");
             return;
         }
-            // deferred2 = $q.defer();
+            deferred2 = $q.defer();
         readMyJasonService.getMyJason(aryJsonUrl[1])
             .then(getJasonFormattedResolve)
             .catch(errorCallBack);
 
         function getJasonFormattedResolve() {
-            deferred1.resolve(data)
+            deferred2.resolve(data)
                     getJsonFormatted(data);
             if (!data) {
                 console.log("Data is empty");
