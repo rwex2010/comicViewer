@@ -22,7 +22,7 @@
     "priority": "2"
   },
   {
-    "ComicCode": "BrewsterRocket",
+    "ComicCode": "Brewster",
     "ComicName": "Brewster Rocket",
     "imgCode": "BrewsterRocket",
     "imgDirectoryLocation": "img/comicStrips",
@@ -98,7 +98,7 @@
     "priority": "2"
   },
   {
-    "ComicCode": "Dilbert",
+    "ComicCode": "dilbert",
     "ComicName": "Dilbert",
     "imgCode": "dilbert",
     "imgDirectoryLocation": "img/comicStrips",

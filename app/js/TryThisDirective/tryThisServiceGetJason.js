@@ -3,18 +3,15 @@
  */
 'use strict';
 
-// comicTryItServices.factory('readMyJasonService', ['$q', '$http','$routeParams', '$filter', readMyJasonService]);
 comicTryItServices.factory('readMyJasonService', ['$q', '$http','$routeParams', 'filterFilter', readMyJasonService]);
 
-// function readMyJasonService($q, $http, $routeParams, $filter) {
 function readMyJasonService($q, $http, $routeParams, filterFilter) {
-    var deferred = $q.defer();
-    // var jsonUrl =  'comics/comicTest.json';
-    // var jsonUrl =  '';
+    var deferred = $q.defer("defer once");
     var jsonUrl;
 
     return {
-        getMyJason: getMyJason
+        getMyJason: getMyJason,
+        reset: reset
     };
 
     function getMyJason(jsonUrl) {
@@ -28,15 +25,12 @@ function readMyJasonService($q, $http, $routeParams, filterFilter) {
     
     function sendResponseData(response) {
         deferred.resolve(response.data);
-        // deferred.resolve(response);
-
-        // var ReturnValue = $filter('filter')(deferred.promise,{ComicCode:'Retail'});
-        // tryArray = deferred.promise
-        // var ReturnValue = filterFilter(tryArray,{ComicCode:'Retail'});
-        // return response.data;
-        // deferred.promise.$$state.value = response;
+        
         return deferred.promise;
-        // return ReturnValue;
+    }
+    
+    function reset() {
+        deferred = $q.defer();        
     }
     
     function sendErrorResponse(response) {

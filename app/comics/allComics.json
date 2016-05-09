@@ -2,7 +2,7 @@
       {
         "ComicName": "9 Chickweed",
         "Domain": "Comics.com",
-        "ComicCode": "9_chickweed_lane",
+        "ComicCode": "9chickweed",
         "DateFormat": "yyyy-mm-dd",
         "SundayExt": "gif",
         "DailyExt": "gif",
@@ -842,7 +842,7 @@
       {
         "ComicName": "Wizard of Id",
         "Domain": "Comics.com",
-        "ComicCode": "wizard_of_id",
+        "ComicCode": "wizardofid",
         "DateFormat": "yyyy-mm-dd",
         "SundayExt": "gif",
         "DailyExt": "gif",
@@ -854,7 +854,7 @@
       {
         "ComicName": "Working Daze",
         "Domain": "Comics.com",
-        "ComicCode": "working_daze",
+        "ComicCode": "workingdaze",
         "DateFormat": "yyyy-mm-dd",
         "SundayExt": "gif",
         "DailyExt": "gif",
@@ -866,7 +866,7 @@
       {
         "ComicName": "Working it out",
         "Domain": "Comics.com",
-        "ComicCode": "working_it_out",
+        "ComicCode": "workingitout",
         "DateFormat": "yyyy-mm-dd",
         "SundayExt": "gif",
         "DailyExt": "gif",
@@ -902,7 +902,7 @@
       {
         "ComicName": "Zits",
         "Domain": "content.comicskingdom.net",
-        "ComicCode": "Zits",
+        "ComicCode": "zits",
         "DateFormat": "YYYYMMDD",
         "SundayExt": "gif",
         "DailyExt": "gif",

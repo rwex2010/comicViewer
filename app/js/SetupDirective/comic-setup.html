@@ -3,19 +3,16 @@
     <form name="form" class="form-horizontal" ng-controller="comicSetupCtrl">
         <div class="form-group">
             <span class="label label-default col-sm-3"> </span>
-            <!--<span class="label label-default col-sm-3"><h3>Original</h3> </span>-->
             <span class="label label-default col-sm-3">{{jsonUrl1}}</span>
             <span class="label label-default col-sm-1"> </span>
             <span class="label label-default col-sm-3">{{formattedUrl}}</span>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-3" for="inputComicCode">Comic Name: </label>
-            <!--<label class="control-label col-sm-2" for="inputComicCode">{{ComicCode}}</label>-->
             <select class="col-sm-3" id="ComicName" name="ComicName" ng-model="selectedComic"
                     ng-options="comic.ComicName for comic in theseComics">
             </select>
             <label class="control-label col-sm-1" for="inputComicCode2"> </label>
-            <!--<input class="col-sm-3" type="text" id="inputComicCode" value="{{selectedComic2.ComicName}}">-->
             <select class="col-sm-3" id="FormattedComicName" name="FormattedComicName" ng-model="selectedComic2"
                     ng-options="comic2.ComicName for comic2 in theseComics2">
             </select>
@@ -42,7 +39,6 @@
             <label class="control-label col-sm-3" for="inputDescription">Description: </label>
             <input class="col-sm-3" type="text" id="inputDescription" value="{{selectedComic.description}}">
             <label class="control-label col-sm-1" for="inputDescription2"> </label>
-            <!--<input class="col-sm-3" type="text" id="inputDescription2" value="{{Description2}}">-->
             <input class="col-sm-3" type="text" id="inputDescription2" value="{{selectedComic2.description}}">
         </div>
         <div class="form-group">
@@ -71,7 +67,7 @@
         </div>
         <div class="form-group">
             <span class="col-sm-3"> </span>
-            <button class="btn btn-default btn-sm col-sm-1" ng-click="saveCurrentChanges">Save</button>
+            <button class="btn btn-default btn-sm col-sm-1" ng-click="saveCurrentChanges($event)">Save</button>
             <span class="col-sm-1"> </span>
             <button class="btn btn-default btn-sm col-sm-1" ng-click="cancelChanges">Cancel</button>
         </div>
