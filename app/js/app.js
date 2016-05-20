@@ -33,6 +33,10 @@ function($routeProvider){
         //alert("hello");
         templateUrl: 'partials/comic-detail.html',
         controller: 'ComicDetailCtrl'
+    }).when('/demo', {
+        // alert("hello");
+        templateUrl: 'js/DemoOfPost/DemoOfPost.html',
+        controller: 'DemoController'
     }).when('/setup', {
         //alert("hello");
         templateUrl: 'js/SetupDirective/comic-setup.html',

@@ -4,8 +4,10 @@
 // TODO Add Save button - which saves any changes made to the the json file being used (comicsNew.json).
 // TODO Add second column with data from the json file being used (comicsNew.json)
 
+// ComicViewControllers.controller('comicSetupCtrl', ['$q', '$scope', 'readMyJasonService', 'filterFilter', 'updateMyJason', comicSetup]);
 ComicViewControllers.controller('comicSetupCtrl', ['$q', '$scope', 'readMyJasonService', 'filterFilter', comicSetup]);
 
+// function comicSetup($q, $scope, readMyJasonService, filterFilter, updateMyJason) {
 function comicSetup($q, $scope, readMyJasonService, filterFilter) {
     var deferred1;
     var activeUrl;
@@ -69,6 +71,7 @@ function comicSetup($q, $scope, readMyJasonService, filterFilter) {
 
     /** click events **/
     $scope.saveCurrentChanges = function (clickEvent) {
-        alert("Save Clicked: " + clickEvent.toString());
+        // alert("Save Clicked: " + clickEvent.toString());
+        // updateMyJason.putMyJason('comics/Update.txt');
     }
 }
