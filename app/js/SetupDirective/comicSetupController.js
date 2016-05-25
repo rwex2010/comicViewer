@@ -39,7 +39,7 @@ function comicSetup($q, $scope, readMyJasonService, filterFilter) {
         }
 
         readMyJasonService.reset();
-        deferred1 = $q.defer();
+        // deferred1 = $q.defer();
         
         readMyJasonService.getMyJason(aryJsonUrl[1])
             .then(getJasonFormattedResolve)
