@@ -98,6 +98,21 @@
     "priority": "2"
   },
   {
+    "ComicName": "Working it out",
+    "Domain": "Comics.com",
+    "ComicCode": "workingitout",
+    "DateFormat": "yyyy-mm-dd",
+    "SundayExt": "gif",
+    "DailyExt": "gif",
+    "UrlFormat": "http://comics.com/zoom/{ComicNumber}/",
+    "SundayAvail": "true",
+    "imgCode": "workingitout",
+    "imgDirectoryLocation": "img/comicStrips",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127",
+    "priority": "2"
+  },
+  {
     "ComicCode": "dilbert",
     "ComicName": "Dilbert",
     "imgCode": "dilbert",
