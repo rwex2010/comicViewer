@@ -77,6 +77,17 @@
     "priority": "3"
   },
   {
+    "ComicCode": "arloandjanis",
+    "ComicName": "Arlo and Janis",
+    "imgCode": "arloandjanis",
+    "imgDirectoryLocation": "img/comicStrips",
+    "Domain": "imgsrv.gocomics.com",
+    "OneOfMyComics": "true",
+    "DaysAvailable": "127",
+    "description": "Empty Nest Couple",
+    "priority": "2"
+  },
+  {
     "ComicCode": "ziggy",
     "ComicName": "Ziggy",
     "imgCode": "ziggy",

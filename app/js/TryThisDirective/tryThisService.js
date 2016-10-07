@@ -16,7 +16,7 @@
         // function getAllComicStrips(fileName) {
             return $http({
                 method: 'GET',
-                url: imgDirectoryLocation + '/' + fileName + '/',
+                url: imgDirectoryLocation + '/' + fileName + '/'
             })
                 .then(sendResponseData)
                 .catch(sendGetBooksError);
@@ -102,9 +102,11 @@
             var myArray = [];
             var jsonImgArrayToAdd = [];
             var jsonImgDateArrayToAdd = [];
+            var nbrDisplayComics = 40;
             myArray = aTags.split(',');
 
-            for (ix = 0; ix < 20; ix++) {
+            // for (ix = 0; ix < 20; ix++) {
+            for (ix = 0; ix < nbrDisplayComics; ix++) {
                 newArray = myArray[ix].split('/');
                 if ((newArray[7] != null)&& (newArray[7] != "Thumbs.db")) {
                    var imgDate = parseTheDate(newArray[7]);
